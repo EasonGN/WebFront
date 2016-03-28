@@ -1,0 +1,105 @@
+h1{
+  	color:#CC33CC;
+  	font-size:22px;
+  	font-family:Georgia;
+  	font-weight:bold;
+
+}
+
+p{
+	color:black
+	font-size:16px;
+}
+
+table{
+	width:50%;
+}
+
+table.main-content { 
+  	width:50%;
+  	border-style:solid;
+} 
+
+tr{
+	height:50px;
+}
+
+td{
+	width:50%
+}
+
+.cgreen{
+	color:#006600;
+}
+
+.hgrey{
+	background-color:#DDDDDD;
+}
+
+.hgreen{
+	background-color:#CCFFCC;
+}
+
+.dleft{
+	direction:ltr;
+}
+
+.dright{
+	 direction:rtl;
+}
+
+.lspace{
+	letter-spacing: 8px;
+}
+
+.lheight{
+	line-height: 40px;
+}
+
+.aleft{
+	text-align: left;
+}
+
+.aright{
+	text-align: right;
+}
+
+.acenter{
+	text-align: center;
+}
+
+.ajustify{
+	text-align: justify;
+}
+
+.dunderline{
+	text-decoration:underline;
+}
+
+.doverline{
+	text-decoration:overline; 
+}
+
+.dthrough{
+	text-decoration:line-through;
+}
+
+.tindent{
+	text-indent:15px;
+}
+
+.tcapitalize{
+	text-transform: capitalize;
+}
+
+.tuppercase{
+	text-transform: uppercase;
+}
+
+.tlowercase{
+	text-transform: lowercase;
+}
+
+.wspace{
+	word-spacing: 5px;
+}
