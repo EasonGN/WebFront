@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/all.css" />
+		<title>CSS 文字(Text)</title>
+	</head>
+	<body>
+		<table border="0" bgcolor="BBD9EE">
+		<tr><td>
+		<h1>CSS文字</h1></td></tr>
+		</table>
+		<h3><a href="http://www.1keydata.com/css-tutorial/tw/">CSS教學<a>&nbsp;&nbsp;>&nbsp;&nbsp;文字</h3>
+		<br>
+		<p>以下是幾個最常被用到與文字樣式有關的 CSS 屬性。</p>
+		<li><a href="#direction">direction</a></li>
+		<li><a href="#letter-spacing">letter-spacing</a></li>
+		<li><a href="#line-height">line-height</a></li>
+		<li><a href="#text-align">text-align</a></li>
+		<li><a href="#text-decoration">text-decoration</a></li>
+		<li><a href="#text-indent">text-indent</a></li>
+		<li><a href="#text-transform">text-transform</a></li>
+		<li><a href="#word-spacing">word-spacing</a></li>
+
+		<a name="direction"></a>
+		<h3>direction</h3>
+		<p><b>direction</b> 屬性是用來設定文字的方向。可能的值為 'ltr' 及 'rtl'。</p>
+		<p>舉例來說，若 CSS 宣告是，</p>
+		<table class="hgrey">
+		<tr><td>
+			p {<br>
+			direction:ltr;<br>
+			}
+		</td></tr>
+		</table>
+		<p>那以下的 HTML 碼，</p>
+		<table class="hgrey">
+		<tr><td>
+			&lt;p&gt;LTR 方向&lt;/p&gt;
+		</td></tr>
+		</table>
+		<p>就會顯現</p>
+		<table class="hgreen">
+		<tr><td class="dleft">
+			LTR 方向
+		</td></tr>
+		</table>
+		<p>若 CSS 宣告是，</p>
+		<table class="hgrey">
+		<tr><td>
+			p {<br>
+			direction:rtl;<br>
+			}
+		</td></tr>
+		</table>
+		<p>那以下的 HTML 碼，</p>
+		<table class="hgrey">
+		<tr><td>
+			&lt;p&gt;RTL 方向&lt;/p&gt;
+		</td></tr>
+		</table>
+		<p>就會顯現</p>
+		<table class="hgreen">
+		<tr><td class="dright">
+			RTL 方向
+		</td></tr>
+		</table>
+
+		<a name="letter-spacing"></a>
+		<h3>letter-spacing</h3>
+		<p><b>letter-spacing</b> 屬性是用來設定每一個字母之間的空間。舉例來說，若 CSS 宣告是，</p>
+		<table class="hgrey">
+		<tr><td>
+			p {<br>
+			letter-spacing:8px;<br>
+			}
+		</td></tr>
+		</table>
+		<p>那以下的 HTML 碼，</p>
+		<table class="hgrey">
+		<tr><td>
+			&lt;p&gt;8px between letters&lt;/p&gt;
+		</td></tr>
+		</table>
+		<p>就會顯現</p>
+		<table class="hgreen">
+		<tr><td class="lspace">
+			8px between letters
+		</td></tr>
+		</table>
+
+		<a name="line-height"></a>
+		<h3>line-height</h3>
+		<p><b>line-height</b> 屬性是用來設定每一行之間的空間。舉例來說，若 CSS 宣告是，</p>
+		<table class="hgrey">
+		<tr><td>
+			p {<br>
+			line-height:40px;<br>
+			}
+		</td></tr>
+		</table>
+		<p>那以下的 HTML 碼，</p>
+		<table class="hgrey">
+		<tr><td>
+			&lt;p&gt;第一行和第二行之間&lt;br&gt;相隔 40px。&lt;/p&gt;
+		</td></tr>
+		</table>
+		<p>就會顯現</p>
+		<table class="hgreen">
+		<tr><td class="lheight">
+			第一行和第二行之間<br>相隔 40px。
+		</td></tr>
+		</table>
+
+		<a name="text-align"></a>
+		<h3>text-align</h3>
+		<p><b>text-align</b> 屬性是用來設定文字是如何對齊。可能的值包括：</p>
+		<li><b>left</b>： 靠左對齊</li>
+		<li><b>right</b>： 靠右對齊</li>
+		<li><b>center</b>： 向中間對齊</li>
+		<li><b>justify</b>： 左右對齊</li>
+		<p>請看以下的例子：</p>
+		
+		<table border="1" cellspacing="0" cellpadding="5" class="main-content" width="410">
+		<tr><td width="100">CSS 樣式</td><td width="310">顯現結果</td></tr>
+			<tr><td>p{<br>text-align:left;<br>}</td>
+			<td class="aleft">這一段句子，是靠左對齊的例子。</td></tr>
+			<tr><td>p{<br>text-align:right;<br>}</td>
+			<td class="aright">這一段句子，是靠右對齊的例子。</td></tr>
+			<tr><td>p{<br>text-align:center;<br>}</td>
+			<td class="acenter">這一段句子，是向中間對齊的例子。</td></tr>
+			<tr><td>p{<br>text-align:justify;<br>}</td>
+			<td class="ajustify">這一段句子，是左右兩邊都對齊的例子。</td></tr>
+		</table>
+
+		<a name="text-decoration"></a>
+		<h3>text-decoration</h3>
+		<p><b>text-decoration</b> 屬性是用來設定文字上有什麼裝飾。可能的值包括：</p>
+		<li><b>underline</b>: 文字下加上一條線。</li>
+		<li><b>overline</b>: 文字上加上一條線。</li>
+		<li><b>line-through</b>: 文字中間加上一條線劃過去。</li>
+		<li><b>blink</b>: 讓文字閃爍。</li>
+		<p>請看以下的例子：</p>
+		
+		<table border="1" cellspacing="0" cellpadding="5" class="main-content" width="410">
+		<tr><td width="100">CSS 樣式</td><td width="310">顯現結果</td></tr>
+			<tr><td>p{<br>text-decoration:underline;<br>}</td>
+			<td class="dunderline">文字下加一條線</td></tr>
+			<tr><td>p{<br>text-decoration:overline;<br>}</td>
+			<td class="doverline">文字上加一條線</td></tr>
+			<tr><td>p{<br>text-decoration:line-through;<br>}</td>
+			<td class="dthrough">文字中間加上一條線劃過去</td></tr>
+		</table>
+
+		<a name="text-indent"></a>
+		<h3>text-indent</h3>
+		<p><b>text-indent</b> 屬性是用來設定每一段的第一行前面要留多少空間。可設定的值包括百分比以及長度。舉例來說，若有以下的 CSS 宣告，</p>
+		<table class="hgrey">
+		<tr><td>
+			p{<br>text-indent:15px;<br>}
+		</td></tr>
+		</table>
+		<p>那以下的HTML碼，</p>
+		<table class="hgrey">
+		<tr><td>
+			&lt;p&gt;這一段第一行的最前面會留 15px 的空間。之後的行數就沒有留任和空間了。&lt;/p&gt;
+		</td></tr>
+		</table>
+		<p>就會顯現，</p>
+		<table class="hgreen">
+		<tr><td class="tindent">
+			這一段第一行的最前面會留 15px 的空間。之後的行數就沒有留任和空間了。
+		</td></tr>
+		</table>
+
+		<a name="text-transform">
+		<h3>text-transform</h3>
+		<p><b>text-transform</b> 屬性是用來控制大小寫是如何展現的。可能的值包括：</p>
+		<li><b>capitalize</b>： 每一個字的第一個字母都以大寫顯現，其他的字母則不改變。</li>
+		<li><b>uppercase</b>： 所有的字母都以大寫顯現。</li>
+		<li><b>lowercase</b>： 所有的字母都以小寫顯現。</li>
+		<li><b>none</b>： 大小寫不做任何改變。</li>
+		<p>舉例來說，用以上這幾個值用在 "this is a LAWYER" 這幾個字上，我們回得到以下的結果：</p>
+
+		<table border="1" cellspacing="0" cellpadding="5" class="main-content" width="410">
+		<tr><td width="200">CSS 樣式</td><td width="210">顯現結果</td></tr>
+			<tr><td>p{<br>text-transform:capitalize;<br>}</td>
+			<td class="tcapitalize">this is a lawyer</td></tr>
+			<tr><td>p{<br>text-transform:uppercase;<br>}</td>
+			<td class="tuppercase">this is a lawyer</td></tr>
+			<tr><td>p{<br>text-transform:lowercase;<br>}</td>
+			<td class="tlowercase">this is a lawyer</td></tr>
+		</table>
+
+		<a name="word-spacing">
+		<h3>word-spacing</h3>
+		<p>word-spacing 屬性是用來設定每個字與每個字之間的距離。舉例來說，若 CSS 宣告是，</p>
+		<table class="hgrey">
+		<tr><td>
+			p{<br>word-spacing:5px;<br>}
+		</td></tr>
+		</table>
+		<p>那以下的HTML碼，</p>
+		<table class="hgrey">
+		<tr><td>
+			&lt;p&gt;Words here are separated by 5px.&lt;/p&gt;
+		</td></tr>
+		</table>
+		<p>就會顯現</p>
+		<table class="hgreen">
+		<tr><td class="wspace">
+			Words here are separated by 5px.
+		</td></tr>
+		</table>
+		<p>下一頁：&nbsp;<a href="http://www.1keydata.com/css-tutorial/tw/float.php">CSS浮動</a>
+		</p>
+	</body>
+</html>

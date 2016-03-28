@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/all.css" />
+		<title>CSS 清除(Clear)</title>
+	</head>
+	<body>
+		<table border="0" bgcolor="BBD9EE">
+		<tr><td>
+		<h1>CSS清除</h1></td></tr>
+		</table>
+		<h3><a href="http://www.1keydata.com/css-tutorial/tw/">CSS教學<a>&nbsp;&nbsp;>&nbsp;&nbsp;Clear</h3><br>
+		<p><b>clear</b> (清除) 屬性是用來抵銷 <a href="http://www.1keydata.com/css-tutorial/tw/float.php"><b>float</b></a> 屬性的作用。可能的值為：</p>
+		<br>
+		<li>left：消除左邊的浮動。</li>
+		<li>right：消除右邊的浮動。</li>
+		<li>both：消除左邊及右邊的浮動。</li>
+		<li>none：不消除任何一邊的浮動。</li>
+		<p>來看一下從 <a href="http://www.1keydata.com/css-tutorial/tw/float.php"><b>float</b></a> 那一頁稍作修改的例子：</p>
+		<p>CSS 宣告：</p>
+		<table class="hgrey">
+		<tr><td>
+		#leftfloat {<br>float:left;<br>}<br>#clearleft {<br> clear:left;<br>}
+		</td></tr>
+		</table>
+		<p>以下的HTML碼</p>
+		<table class="hgrey">
+		<tr><td>
+		&lt;span id="leftfloat"&gt;&lt;img src="yp.jpg"&gt;&lt;/span&gt;這個例子&lt;span id="clearleft"&gt;展現出 clear:left 能夠抵銷 float 屬性的值。&lt;/span&gt;
+		</td></tr>
+		</table>
+		<p>就會顯現出，</p>
+		<table class="hgreen">
+		<tr><td>
+		<img src="image/yp.jpg">這個例子展現出 clear:left 能夠抵銷 float 屬性的值。
+		</td></tr>
+		</table>
+		<p>在上面的例子中，一但 clear:left 的樣式被用上，float:left 就不再有作用。也就因為這樣，在 clear:left 樣式後的所有文字都是在圖案之下。</p>
+		<p>下一頁：&nbsp;<a href="css mouse.html">CSS滑鼠遊標圖案</a>
+		</p>
+	</body>
+</html>
